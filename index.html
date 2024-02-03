@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta  http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="assets/favicon.svg">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Decodificador</title>
+</head>
+<body>
+    <header class="logotipo">
+        <img src="assets/Frame 6.png" alt="Logo da Alura">
+    </header>
+    <main class="conteudo-principal">
+        <section class="conteudo-principal__input">
+            <textarea class="conteudo-principal__input__area" id="conteudo-principal__input__area" cols="30" rows="10" placeholder="Digite seu texto"></textarea>
+            <div class="conteudo-principal__input__alerta">
+                <img src="assets/bi_exclamation-circle-fill.png" alt="Exclamacao">
+                <p  class="conteudo-principal__input__alerta__texto">Apenas letras minúsculas e sem acento.</p>
+            </div>
+            <div class="conteudo-principal__input__botao">
+                <button class="conteudo-principal__input__botao__cripto" onclick="criptografar()">Criptografar</button>
+                <button class="conteudo-principal__input__botao__descripto" onclick="descriptografar()">Descriptografar</button>
+            </div>
+        </section>
+        <div class="conteudo-secundario">
+            <div class="conteudo-secundario__vazio"></div>
+            <div class="conteudo-secundario__output">
+                <img src="assets/High quality products 1 1.svg" alt="Procurando o texto">
+                <p class="conteudo-secundario__output__texto-destaque">Nenhuma mensagem encontrada</p>
+                <p class="conteudo-secundario__output__texto-secundario">Digite um texto que você deseja <br> criptografar ou descriptografar.</p>
+            </div>
+        </div>
+    </main>
+    <footer class="creditos">
+        <div class="creditos__texto">
+            <p>Criado por: Daniel V.</p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    box-sizing: border-box;
+    background-color: #D8DFE8;
+}
+
+.logotipo { 
+    padding: 1% 0% 0% 1%;
+}
+
+.conteudo-principal {
+    padding: 0% 5%  ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 944px;
+    gap: 80px;
+}
+
+.conteudo-principal__input {
+    display: flex;
+    flex-direction: column;
+    width: 42.5rem;
+    gap: 16px;
+}
+
+.conteudo-principal__input__area {
+    font-size: 3rem;
+    font-family: "Inter", sans-serif;
+    color: #0A3871;
+    background-color: #D8DFE8;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 24px;
+    padding: 25px;
+    outline: 0;
+    resize: none;
+    border: none;
+}
+
+.conteudo-principal__input__area::placeholder {
+    font-size: 3rem;
+    color: #0A3871;
+}
+
+.conteudo-principal__input__alerta {
+    display: flex;
+    gap: 8px;
+}
+
+.conteudo-principal__input__alerta__texto {
+    font-size: 1.13rem;
+    font-family: "Inter", sans-serif;
+    color: #495057;
+}
+
+.conteudo-principal__input__botao {
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteudo-principal__input__botao__cripto {
+    background-color: #0A3871;
+    color: #FFFFFF;
+    font-family: "Inter", sans-serif;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    font-size: 1rem;
+}
+
+.conteudo-principal__input__botao__descripto {
+    background-color: #E8E8E8;
+    color: #0A3871;
+    font-family: "Inter", sans-serif;
+    border: #0A3871 solid 2px;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    font-size: 1rem;
+}
+
+.conteudo-secundario {
+    display: flex;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    overflow: auto;
+    background-color: #FFFFFF;
+    border-radius: 32px;
+    width: 25rem;
+    height: 944px;
+}
+
+.conteudo-secundario__output {
+    display: flex;
+    position: absolute ;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+    gap: 32px;
+}
+
+.conteudo-secundario__output img {
+    width: 21rem;
+    height: 19rem;
+}
+
+.conteudo-secundario__output__texto-destaque {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    color: #343A40;
+}
+
+.conteudo-secundario__output__texto-secundario {
+    text-align: center;
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+    color: #495057;
+}
+
+.conteudo-secundario__vazio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 900px;
+    width: 100%;
+    padding: 5%;
+}
+
+.conteudo-secundario__texto_final {
+    font-family: "Inter", sans-serif;
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #495057;
+}
+
+.conteudo-secundario__vazio__botao {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 80px;
+}
+
+.conteudo-secundario__vazio__botao-copiar {
+    background-color: #E8E8E8;
+    color: #0A3871;
+    font-family: "Inter", sans-serif;
+    border: #0A3871 solid 2px;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    font-size: 1rem;
+}
+
+.creditos {
+    padding: 1% 0% 0% 0%;
+    width: auto;
+}
+
+.creditos__texto {
+    background-color: #0A3871;
+    color: #D8DFE8;
+    font-size: 0.75rem;
+    padding: 10px;
+    width: auto;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+}
+
+@media (max-width: 1220px){
+    .conteudo-principal {
+        flex-direction: column;
+        padding: 1%;
+        height: 50%;
+        gap: 40px
+    }
+    
+    .conteudo-secundario{
+        justify-content: center;
+        height: 200px;
+        width: 700px;
+    }
+
+    .conteudo-secundario__vazio {
+        height: 150px;
+        width: 600px;
+        gap: 50px;
+        padding: 0%;
+    }
+
+    .conteudo-secundario__output img{
+        display: none;
+    }
+
+    .conteudo-secundario__texto_final {
+        height: 45px;
+    }
+
+    .conteudo-secundario__vazio__botao {
+        padding-bottom: 2px;
+    }
+}
